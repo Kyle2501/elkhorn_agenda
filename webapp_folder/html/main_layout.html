@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ page_name }} - Progress</title>
+
+
+<style>
+
+body { font-family: 'Raleway', sans-serif; color: #777; background-color: #FAFAFA; padding: 0; margin: 0; }
+
+
+.user_gate { font-size: 12px; text-align: right; position: fixed; top: 10px; right: 10px; vertical-align: top; z-index: 995; }
+.user_gate a { color: blue; text-decoration: none; }
+.user_gate a:visited { color: blue; }
+.user_gate a:hover { text-decoration: underline; }
+.user_image { margin-right: 5px; }
+.user_image img { border-radius: 50%; width: 40px; height: 40px; }
+
+.elkhorn_wrap { position: fixed; bottom: 5px; right: 10px; }
+.elkhorn_wrap img { height: 40px; transition: height 0.5s ease; }
+.elkhorn_wrap img:hover { height: 160px; transition: height 0.5s ease; }
+
+header { }
+.site_name { font-family: 'Libre Baskerville', serif; font-size: 48px; color: #555; display: inline-block; }
+
+.left_side { margin-top: 5px; display: inline-block; vertical-align: top; }
+.left_side img { width: 65px; }
+
+main { outline: 1px solid #777; width: 650px; margin: 0 auto; min-height: 250px; display: inline-block; margin-top: 15px; }
+
+.page_data { margin: 15px; }
+
+
+</style>
+
+</head>
+<body>
+
+  <div class="user_gate" ng-show="modal=='on'">
+    {% if user_name != 'No User' %}
+    <a href="../../my_info">
+      <div class="user_image"><img ng-src="/render_img?client?thumb?[! my_info.client_email !]"></a>
+      </div>{% endif %}
+      <div class="user_name">
+      {% if user_name != 'No User' %}
+        {{ user_name }}
+        <p><a href="../../my_info">My Info</a></p>
+      {% endif %}
+      <p><a href="{{ login_key }}">{{ gate }}</a></p>
+      
+    </div>
+  </div><!-- . user_gate - -->
+
+
+<header>
+  <a href="/"><img style="margin-left:5px;width:75px;" src="../../pics/8zaezz.png" /></a>
+  <div class="site_name">Progress</div>
+  <br />hi test
+</header>
+
+<aside class="left_side">
+ <img style="margin-left:5px; width:120px;" src="../../pics/noun_305230_cc.png" />
+
+</aside><!-- . left_side - -->
+
+<main>
+  <div class="page_data">
+    {{ page_html }}
+  </div><!-- . page_data - -->
+
+</main>
+
+
+  <div class="elkhorn_wrap">
+    <a href="http://labs.elkhorn.io/"><img src="../../pics/zaezae.png" /></a>
+  </div><!-- - /elkhorn_wrap - -->
+</body>
+</html>
