@@ -110,6 +110,40 @@ front_page = '''<style>
 </div><!-- . week_wrap - -->
 
 
+
+<style>
+
+.month_wrap { width: 410px; margin-top: 50px; display: inline-block; border-right: 1px solid #ccc; }
+.month_day_wrap { display: inline-block; margin: 5px; width: 45px; padding-top: 10px; height: 30px; text-align: center; cursor: pointer; }
+.month_day_wrap:hover { outline: 1px solid #ddd; }
+.month_first_day { border-bottom: 1px solid #bbb; }
+.past_days { color: #bbb; }
+.current_day { outline: 1px solid #268bd2; }
+
+.month_day_detail { display: inline-block; vertical-align: top; margin-top: 50px; margin-left: 25px;  }
+
+.month_day_number { font-size: 32px; margin: 15px; border-bottom: 1px solid #aaa; width: 50px; text-align: center; }
+
+</style>
+
+<div class="month_wrap">
+  
+  <div class="month_day_wrap" ng-repeat="item in month_days | startFrom: (month_day - day_of_week - 1)" ng-class="{current_day: item == month_day }" ng-click="showDetail(item)">
+    <span  ng-class="{past_days: item < month_day}">[!item!]</span>
+  </div>
+
+  <div class="month_day_wrap" ng-repeat="item in month_days | limitTo: future_months_1" ng-class="{month_first_day: item < 2}">
+    <span>[!item!]</span>
+  </div>
+
+
+
+
+</div><!-- .month_wrap - -->
+
+
+
+
 </div><!-- . agenda_wrap - -->
 '''
 
