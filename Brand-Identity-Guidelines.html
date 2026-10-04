@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Identity Guidelines | Antistatic Lab & Civic Infrastructure</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+slateBase: '#181A1B',
+mossHull: '#2D3B36',
+copperAccent: '#B87333',
+industrialBlack: '#0E1010',
+amberAlert: '#FFBF00',
+safetyWhite: '#F4F6F4',
+mutedGrey: '#8C9592'
+},
+fontFamily: {
+mono: ['"JetBrains Mono"', 'monospace'],
+sans: ['Inter', 'sans-serif']
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-slateBase text-safetyWhite font-sans antialiased selection:bg-copperAccent selection:text-industrialBlack">
+<!-- Top Navigation Bar -->
+<header class="border-b border-mossHull/60 bg-industrialBlack/80 backdrop-blur sticky top-0 z-50">
+<div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 border-2 border-copperAccent flex items-center justify-center font-mono text-xs font-bold text-copperAccent">
+[O]
+</div>
+<span class="font-mono text-sm tracking-widest text-safetyWhite uppercase">ANTISTATIC // CIVIC-SYS</span>
+</div>
+<div class="text-xs font-mono text-mutedGrey">
+DOC_ID: BG-2026-V1
+</div>
+</div>
+</header>
+<!-- Main Container -->
+<main class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+<!-- Title Section -->
+<section class="border-b border-mossHull pb-8">
+<div class="inline-block px-3 py-1 bg-mossHull text-copperAccent font-mono text-xs uppercase tracking-wider mb-4 border border-copperAccent/30">
+Master Specification Sheet
+</div>
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight uppercase font-mono text-safetyWhite mb-4">
+Brand Identity Guidelines
+</h1>
+<p class="text-lg text-mutedGrey max-w-2xl leading-relaxed">
+Bridging rugged industrial techwear aesthetics with functional, high-durability civic micro-station design. Standards for color, typography, and geometry.
+</p>
+</section>
+<!-- Section 1: Philosophy -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1">
+<h2 class="text-xl font-mono uppercase tracking-wider text-copperAccent mb-2">01. Philosophy</h2>
+<p class="text-sm text-mutedGrey font-mono">Tone & Naming Protocols</p>
+</div>
+<div class="md:col-span-2 bg-mossHull/30 border border-mossHull p-6 space-y-4 rounded-none">
+<p class="text-safetyWhite leading-relaxed">
+The brand language is rooted in industrial reliability, modular efficiency, and technical precision. Every touchpoint—from hardware enclosures and apparel tags to digital dashboards—should communicate safety, durability, and open-source accessibility without relying on ornate or decorative motifs.
+</p>
+<div class="p-4 bg-industrialBlack/60 border-l-2 border-amberAlert text-xs font-mono text-mutedGrey">
+<span class="text-amberAlert uppercase font-bold">Directive:</span> Avoid any religious, overly radical, or ambiguous phrasing. Keep nomenclature strictly functional and operational (e.g., Frames, Hulls, Cores).
+</div>
+</div>
+</section>
+<!-- Section 2: Color System -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1">
+<h2 class="text-xl font-mono uppercase tracking-wider text-copperAccent mb-2">02. Color System</h2>
+<p class="text-sm text-mutedGrey font-mono">Industrial Moss Palette</p>
+</div>
+<div class="md:col-span-2 space-y-6">
+<p class="text-safetyWhite">
+Optimized for high-contrast legibility in intense outdoor environments (such as desert sun exposure) while maintaining an industrial, low-glare finish.
+</p>
+<!-- Color Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 font-mono text-xs">
+<div class="bg-slateBase border border-mossHull p-4 space-y-2">
+<div class="h-12 bg-slateBase border border-mossHull"></div>
+<div class="font-bold text-safetyWhite">Deep Slate</div>
+<div class="text-mutedGrey">#181A1B</div>
+</div>
+<div class="bg-slateBase border border-mossHull p-4 space-y-2">
+<div class="h-12 bg-mossHull"></div>
+<div class="font-bold text-safetyWhite">Oxidized Moss</div>
+<div class="text-mutedGrey">#2D3B36</div>
+</div>
+<div class="bg-slateBase border border-mossHull p-4 space-y-2">
+<div class="h-12 bg-copperAccent"></div>
+<div class="font-bold text-industrialBlack">Copper Accent</div>
+<div class="text-copperAccent">#B87333</div>
+</div>
+<div class="bg-slateBase border border-mossHull p-4 space-y-2">
+<div class="h-12 bg-industrialBlack border border-mossHull"></div>
+<div class="font-bold text-safetyWhite">Industrial Black</div>
+<div class="text-mutedGrey">#0E1010</div>
+</div>
+<div class="bg-slateBase border border-mossHull p-4 space-y-2">
+<div class="h-12 bg-amberAlert"></div>
+<div class="font-bold text-industrialBlack">Amber Alert</div>
+<div class="text-amberAlert">#FFBF00</div>
+</div>
+<div class="bg-slateBase border border-mossHull p-4 space-y-2">
+<div class="h-12 bg-safetyWhite"></div>
+<div class="font-bold text-industrialBlack">Safety White</div>
+<div class="text-mutedGrey">#F4F6F4</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Typography -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1">
+<h2 class="text-xl font-mono uppercase tracking-wider text-copperAccent mb-2">03. Typography</h2>
+<p class="text-sm text-mutedGrey font-mono">Hierarchy & Typefaces</p>
+</div>
+<div class="md:col-span-2 bg-mossHull/30 border border-mossHull p-6 space-y-6">
+<div>
+<h3 class="font-mono text-sm text-copperAccent uppercase mb-1">Primary Technical Face</h3>
+<p class="font-mono text-lg text-safetyWhite">JetBrains Mono / Space Mono</p>
+<p class="text-xs text-mutedGrey mt-1">Used for asset tags, diagnostic readouts, spec callouts, and serial numbers.</p>
+</div>
+<hr class="border-mossHull">
+<div>
+<h3 class="font-mono text-sm text-copperAccent uppercase mb-1">Secondary Wayfinding Face</h3>
+<p class="font-sans text-lg font-semibold text-safetyWhite">Inter / Roboto</p>
+<p class="text-xs text-mutedGrey mt-1">Used for instructions, headers, and UI navigation.</p>
+</div>
+<hr class="border-mossHull">
+<div class="text-xs font-mono space-y-2 text-mutedGrey">
+<p><strong class="text-safetyWhite">Headers:</strong> Uppercase only, tracked out (letter-spacing increased by 5-10%).</p>
+<p><strong class="text-safetyWhite">Body Copy:</strong> Left-aligned, never justified. Minimum 1.25 line height.</p>
+</div>
+</div>
+</section>
+<!-- Section 4: Logo Geometry -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1">
+<h2 class="text-xl font-mono uppercase tracking-wider text-copperAccent mb-2">04. Logo Geometry</h2>
+<p class="text-sm text-mutedGrey font-mono">Core Bracket Motif</p>
+</div>
+<div class="md:col-span-2 space-y-6">
+<p class="text-safetyWhite">
+The logo mark utilizes a central Core Bracket Motif—a modular, symmetrical enclosure design representing structural integrity and quick-swap capabilities.
+</p>
+<!-- ASCII Diagram Box -->
+<div class="bg-industrialBlack border border-mossHull p-6 font-mono text-xs text-amberAlert flex flex-col items-center justify-center space-y-2">
+<div class="text-mutedGrey">      [=]  <-- Top Clearance Zone (1x Unit)</div>
+<div class="text-safetyWhite">   +---------+</div>
+<div class="text-safetyWhite">   |  [   ]  |  <-- Core Bracket Mark</div>
+<div class="text-safetyWhite">   |  ( O )  |  <-- Node Indicator</div>
+<div class="text-safetyWhite">   +---------+</div>
+<div class="text-mutedGrey">      [=]  <-- Bottom Clearance Zone (1x Unit)</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+<div class="border border-mossHull p-4 bg-mossHull/20">
+<span class="text-copperAccent font-bold uppercase">Physical Minimum Sizing</span>
+<p class="text-mutedGrey mt-1">Minimum width of 0.75 inches (19mm) for hardware etching or apparel patches.</p>
+</div>
+<div class="border border-mossHull p-4 bg-mossHull/20">
+<span class="text-copperAccent font-bold uppercase">Digital Minimum Sizing</span>
+<p class="text-mutedGrey mt-1">Minimum width of 32 pixels for high-density mobile viewports.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-mossHull bg-industrialBlack py-8 mt-16 text-center text-xs font-mono text-mutedGrey">
+<p>ANTISTATIC LAB // CIVIC INFRASTRUCTURE FRAMEWORK. ALL RIGHTS RESERVED.</p>
+</footer>
+</body>
+</html>
